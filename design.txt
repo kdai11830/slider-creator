@@ -1,0 +1,30 @@
+For our program, we made the decision to code in Java primarily due to a little previous experience in Java GUI coding.
+For the visual part of our project, we utilized a public utility available for eclipse called WindowBuilder, which allowed
+us to drag and drop JComponents onto a frame and create our GUI visually, after which the IDE automatically parsed the
+code for us. The ActionEvent listeners were used to link the windows together and to throw error messages when the user made
+a wrong move. For the functional aspect, we made use of object-oriented programming by creating classes that had their own 
+unique functions. 
+
+While each window class was not anything too unique, asides from the ActionEvent listeners, the DrawArea class that we
+implemented was the biggest test for our design. Using the getGraphics method for images, we extracted an editable white
+canvas that responded to mouse clicks and drags. However, not only do the MouseEvent listeners allow the user to draw on
+the canvas, but it also uses the same action to add anchor point coordinates to an ArrayList, which is useful later on.
+This proactive initialization of the anchor points list is a very quick and easy way to accomplish a task that would 
+otherwise be almost impossible given only, say, the rendered BufferedImage passed into future windows. Using only 3 lines
+of code total to achieve this, it makes for cleaner and easier to understand code.
+
+The GraphicsToSlider class seems fairly complicated, but in reality is pretty straightforward. The main things that the 
+class does is read the selected file, extract information, combine that information with the anchor points, and output
+the result by overwriting the original file. Almost all of the file reading was done using BufferedReader and the writing
+was done using BufferedWriter. There were some mathematical algorithms that we had to perform and some constants had
+to be derived through many tests, such as the one in the getPixelLength method. There were some things that we had to 
+work around as well. For example, since BufferedWriter can't write to the middle of a file, we had no choice but to
+read the whole file, copy it into a string object, and write the entire string into a new file of the same name and 
+directory, effectively overwriting it. In addition, we had to take into account that the notepad didn't have the orthodox
+new line escape character, so we had to manually create that as well.
+
+This GraphicsToSlider class is the one that makes this program much easier for the user, with the expense of having to
+parse the file itself. Originally, the program displayed the slider and timing codes in separate text boxes on the last
+window, forcing the user to open up the file themselves and copy and paste the codes in their respective locations.
+This current design of automating the copy and pasting process releases the user from any responsibility and mistakes that
+they could possibly make in the process.

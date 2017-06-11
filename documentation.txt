@@ -1,0 +1,50 @@
+osu! Slider Creator Application
+Authors: Kevin Dai and Terrance Williams
+
+I. Software Requirements
+	a. Java 
+		As the program is written in Java, make sure you have the latest version of Java. 	
+		You can download the latest version of Java by following this link to the official site:
+			https://java.com/en/download/
+	b. osu!
+		If you haven't already, download osu! by using following this link to the official site: 
+			http://osu.ppy.sh/p/download
+		Check to make sure your computer has everything it needs to run the game (it is not very hardware-intense though). 
+
+II. Using the Program
+
+	A. Downloading a Song File:
+		In order to begin editing, you need a song to map! osu! is played using what are known as beatmaps (.osz files).
+ 		To download a beatmap, create an account on the official osu! website (if you haven't already). Refer to section Ib) for the link.
+		Go to the beatmap listing (https://osu.ppy.sh/p/beatmaplist), find a song that	catches your ear, and click on its title. 
+		Next, download the song by clicking the pink "Download Beatmap!" button. 
+
+		"If your browser asks you what it should do with the file, choose "Open with osu!" if you can.
+		 The file will be downloaded, and osu! will automatically open and import the file.
+		 If you choose to save the file instead, or your browser doesn't give you the choice, 
+		 download the file, go to the download directory, and either double-click on it to automatically import it in osu! or, 
+		 if osu! is already opened, drag and drop the newly-downloaded file directly in the game window. If you are tech-savvy, 
+		 be aware that you can also move your .osz files in the "Songs" folder of osu!'s installation directory (default is Program Files).
+		 Go play your beatmap! Press F5 at the song select screen if the list isn't automatically refreshed." (http://osu.ppy.sh/wiki/Installation)
+
+		 Alternatively, osu! supports mapping of an mp3 file as well. To do so, select "Edit"
+		 mode and drag>drop your .mp3 file into the box on the left side of the screen. 
+
+	B. Finding Your osu! Song File:
+
+		 In order to use this program, you will need an osu! song file. To locate your song file (.osu format),  
+ 		 open the game and select the "Edit" mode. Select the song you wish to edit by scrolling through the selection.
+ 		 Next, open the song folder by navigating to the top-left corner of the window and selecting "File>Open Song Folder".
+ 		 This brings you to the directory in which your song is located. Please remember this location for future reference
+ 		 (We suggest copying the file path on a piece of paper).
+
+	C. Using the Program:
+ 		Drawing the Slider:
+			To begin, open the application. You will be prompted with a dialog box were you are to locate your desired .osu file
+ 			(which we previously found in section B!). Navigate to the specific directory and select your .osu file. 
+			You will then be brought to the draw screen. On this screen, slowly draw your desired osu! slider shape. Don't worry if you make a mistake! 
+			We've implemented a "Clear" button. When you are satisfied with your design, press the "Transform" button. 
+			At this point, you will be met with a screen asking for a beat number input. Essentially, type how many beats you want the slider to last
+ 			in the provided box and click "Create". The program will automatically implement your slider into the .osu file!
+
+								
